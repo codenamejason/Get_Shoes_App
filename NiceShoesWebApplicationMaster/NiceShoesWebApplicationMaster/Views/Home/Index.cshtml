@@ -1,0 +1,137 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script>$(document).ready(function(){$.ajaxSetup({cache:!0});$.getScript("//connect.facebook.net/en_US/sdk.js",function(){FB.init({appId:"1197747633572641",version:"v2.5"});$("#loginbutton,#feedbutton").removeAttr("disabled");FB.getLoginStatus(updateStatusCallback)})});</script>
+
+
+
+<div class="jumbotron">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <div class="fb-like"
+             data-share="true"
+             data-width="120"
+             data-show-faces="true">
+        </div>
+    </div>
+
+    <div class="body-content">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <form action="/Home/CategoryChosen" method="get">
+
+                    <fieldset>
+                        Shoe Brand&nbsp;<select id="ShoeBrand" name="ShoeBrand">
+
+                            <option selected="selected" value="0">- Select Brand -</option>
+
+                            <option value="1">Steve Madden</option>
+
+                            <option value="2">Jimmi Choo</option>
+
+                            <option value="3">Sketchers</option>
+
+                        </select>
+
+                        <p><input type="submit" value="Submit" /> </p>
+
+                    </fieldset>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <h2>Get Your Shoes</h2>
+    <p>
+        @Html.ActionLink("Shop Now For My Shoes", "Create")
+    </p>
+    <table>
+        <tr>
+            <th>
+                Brand
+            </th>
+            <th>
+                Style
+            </th>
+            <th>
+                Heel
+            </th>
+            <th>
+                Color
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Popularity
+            </th>
+            <th>
+                Quality
+            </th>
+            <th>
+                Want It Meter
+            </th>
+            <th></th>
+        </tr>
+        @*@foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Genre.Name)
+                    </td>
+                    <td>
+
+                        @Html.DisplayFor(modelItem => item.Artist.Name)
+                    </td>
+                   <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+
+                    </td>
+
+                    <td>
+
+                        @Html.DisplayFor(modelItem => item.Price)
+
+                    </td>
+
+                    <td>
+
+                        @Html.ActionLink("Edit", "Edit", new { id = item.AlbumId }) |
+
+                        @Html.ActionLink("Details", "Details", new { id = item.AlbumId }) |
+
+                        @Html.ActionLink("Delete", "Delete", new { id = item.AlbumId })
+
+                    </td>
+
+                </tr>*@
+
+
+
+    </table>
+
+
+    <div class="row">
+        @*<div class="fb-page"
+                 data-href="https://www.facebook.com/romeroagency"
+                 data-tabs="timeline"
+                 data-small-header="true"
+                 data-adapt-container-width="true"
+                 data-hide-cover="false"
+                 data-show-facepile="false">
+                <div class="fb-xfbml-parse-ignore">
+                    <blockquote cite="https://www.facebook.com/romeroagency">
+                        <a href="https://www.facebook.com/romeroagency">The Romero Agency</a>
+                    </blockquote>
+                </div>
+            </div>*@
+    </div>
+</div>
+<div class="col-md-4">
+
+</div>
+<div class="col-md-4">
+
+</div>

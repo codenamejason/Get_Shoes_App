@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiceShoesWebApplicationMaster", "NiceShoesWebApplicationMaster\NiceShoesWebApplicationMaster.csproj", "{6E9060A4-351F-4119-90FC-0DC357D8D56E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiceShoesWebApplicationMaster.Tests", "NiceShoesWebApplicationMaster.Tests\NiceShoesWebApplicationMaster.Tests.csproj", "{6673A2E2-80E2-490A-8318-058F28343D37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{26E9C582-8445-4124-8E44-EBEC82BDC9DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{2B1F1A43-5046-404C-832A-0B1CECD3DDC8}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{799E53B4-37D5-4EBB-979B-B2526C42BEE3}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\NiceShoesWebApplicationMaster.json = PublishScripts\Templates\NiceShoesWebApplicationMaster.json
+		PublishScripts\Templates\NiceShoesWebApplicationMaster.param.dev.json = PublishScripts\Templates\NiceShoesWebApplicationMaster.param.dev.json
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ShoeInventoryService", "..\FSharpWeb1\FSharpWeb1\ShoeInventoryService.fsproj", "{A525F594-3313-4BE6-A974-941753FA1F17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E9060A4-351F-4119-90FC-0DC357D8D56E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E9060A4-351F-4119-90FC-0DC357D8D56E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E9060A4-351F-4119-90FC-0DC357D8D56E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E9060A4-351F-4119-90FC-0DC357D8D56E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6673A2E2-80E2-490A-8318-058F28343D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6673A2E2-80E2-490A-8318-058F28343D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6673A2E2-80E2-490A-8318-058F28343D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6673A2E2-80E2-490A-8318-058F28343D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A525F594-3313-4BE6-A974-941753FA1F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A525F594-3313-4BE6-A974-941753FA1F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A525F594-3313-4BE6-A974-941753FA1F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A525F594-3313-4BE6-A974-941753FA1F17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B1F1A43-5046-404C-832A-0B1CECD3DDC8} = {26E9C582-8445-4124-8E44-EBEC82BDC9DA}
+		{799E53B4-37D5-4EBB-979B-B2526C42BEE3} = {26E9C582-8445-4124-8E44-EBEC82BDC9DA}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://niceshoes.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = NiceShoesWebApplicationMaster.Tests\\NiceShoesWebApplicationMaster.Tests.csproj
+		SccProjectName1 = NiceShoesWebApplicationMaster.Tests
+		SccLocalPath1 = NiceShoesWebApplicationMaster.Tests
+		SccProjectUniqueName2 = NiceShoesWebApplicationMaster\\NiceShoesWebApplicationMaster.csproj
+		SccProjectName2 = NiceShoesWebApplicationMaster
+		SccLocalPath2 = NiceShoesWebApplicationMaster
+		SccProjectUniqueName3 = ..\\FSharpWeb1\\FSharpWeb1\\ShoeInventoryService.fsproj
+		SccProjectName3 = ../FSharpWeb1/FSharpWeb1
+		SccLocalPath3 = ..\\FSharpWeb1\\FSharpWeb1
+	EndGlobalSection
+EndGlobal

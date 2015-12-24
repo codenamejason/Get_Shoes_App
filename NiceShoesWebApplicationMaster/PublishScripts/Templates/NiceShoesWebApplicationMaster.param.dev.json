@@ -1,0 +1,32 @@
+{
+  "siteName": {
+    "value": "NiceShoesWebApplicationMaster"
+  },
+  "hostingPlanName": {
+    "value": "GOBMAIN"
+  },
+  "siteLocation": {
+    "value": "East US"
+  },
+  "sku": {
+    "value": "Standard"
+  },
+  "workerSize": {
+    "value": "1"
+  },
+  "serverName": {
+    "value": "gobsql01eus2"
+  },
+  "serverLocation": {
+    "value": "East US"
+  },
+  "administratorLogin": {
+    "value": "appmainadmin"
+  },
+  "administratorLoginPassword": {
+    "value": "JennIsMy1"
+  },
+  "databaseName": {
+    "value": "NiceShoesWebApplicationMaster_db"
+  }
+}
